@@ -412,7 +412,7 @@ namespace UnityEngine.XR.Interaction.Toolkit
             {
                 // draw XR Rig box
                 Gizmos.color = Color.green;
-                GizmoHelpers.DrawWireCubeOriented(m_RigBaseGameObject.transform.position, m_RigBaseGameObject.transform.rotation, 1.5f);
+                GizmoHelpers.DrawWireCubeOriented(m_RigBaseGameObject.transform.position, m_RigBaseGameObject.transform.rotation, 3.0f);
                 GizmoHelpers.DrawAxisArrows(m_RigBaseGameObject.transform, 0.5f);
             }
 
