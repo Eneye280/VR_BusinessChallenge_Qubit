@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BUSSINESS CHALLENGE/Model/PolygonPrototype/Scenes/Demo.unity
+- path: Assets/BUSSINESS CHALLENGE/Scenes/Level_Platform.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
