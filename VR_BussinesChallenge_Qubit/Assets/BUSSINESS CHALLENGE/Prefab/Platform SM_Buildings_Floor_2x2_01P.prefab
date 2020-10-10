@@ -76,7 +76,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
 --- !u!222 &1497396183
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 33
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_renderer: {fileID: 1497396184}
   m_maskType: 0
   _SortingLayerID: 0
-  _SortingOrder: 0
+  _SortingOrder: -1
 --- !u!1 &1632232885
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a330cbe0592177469362df17c666cdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEnablePlatform: 0
+  isEnablePlatform: 1
   namePlatform: P A-1
   textNamePlatform: {fileID: 0}
   childEmissionPlatform: {fileID: 0}
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_CustomReticle: {fileID: 1598034248799334, guid: 5fb125617629fb64386fdafd5ec4a612,
+  m_CustomReticle: {fileID: 1913088229479876, guid: d3291f8781d26a04189ab3143fd13128,
     type: 3}
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 1
