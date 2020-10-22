@@ -11,26 +11,15 @@ public class Platform : MonoBehaviour
     [SerializeField] internal string namePlatform;
     [SerializeField] internal TextMeshPro textNamePlatform;
 
-    [Space(15)]
-    [SerializeField] internal GameObject childEmissionPlatform;
-
     private void Start()
     {
-        textNamePlatform = transform.GetChild(1).GetComponent<TextMeshPro>();
+        textNamePlatform = transform.GetChild(0).GetComponent<TextMeshPro>();
         textNamePlatform.text = namePlatform;
         textNamePlatform.enabled = false;
-
-        childEmissionPlatform = transform.GetChild(2).gameObject;
-        childEmissionPlatform.SetActive(false);
-
         ManagerEvents.isVerifyOnOffPlatform += EnablePlayerInPlatform;
     }
-    //private void OnEnable()
-    //{
-    //    ManagerEvents.isVerifyOnOffPlatform += EnablePlayerInPlatform;
-    //}
 
-    public void EnablePlayerInPlatform(bool isEnable)
+    private void EnablePlayerInPlatform(bool isEnable)
     {
         isEnable = isEnablePlatform;
 
@@ -38,7 +27,6 @@ public class Platform : MonoBehaviour
         {
             print("EL JUGADOR SIGUE VIVO");
         }
-
 
         if(!isEnablePlatform)
         {
@@ -50,7 +38,4 @@ public class Platform : MonoBehaviour
     {
         ManagerEvents.isVerifyOnOffPlatform(true);
     }
-
-
-    //private void OnDisable() => ManagerEvents.isVerifyOnOffPlatform -= EnablePlayerInPlatform;
 }

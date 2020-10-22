@@ -1,11 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RestartLevels : MonoBehaviour
 {
-    private WaitForSeconds delayTimeFadeRestart = new WaitForSeconds(1);
-
     [SerializeField] internal Transform player;
 
     [Header("LEVEL PLATFORM")]
@@ -18,11 +14,6 @@ public class RestartLevels : MonoBehaviour
     {
         player.position = new Vector3(position[0], position[1], position[2]);
         Destroy(player.GetComponent<Rigidbody>());
-    }
-
-    private IEnumerator TimeFideRestart()
-    {
-        yield return delayTimeFadeRestart;
     }
 
     private void OnTriggerEnter(Collider other)
